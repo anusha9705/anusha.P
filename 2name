@@ -1,0 +1,16 @@
+#include<stdio.h>
+struct person
+{
+	char name[50];
+}s[2];
+int main()
+{
+	int i;
+	for(i=0;i<2;++i)
+	{
+	printf("enter name: ");
+	fgets(s[i].name,sizeof(s[i].name),stdin);
+	printf("name:%s",s[i].name);
+}
+	return 0;
+}
