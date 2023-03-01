@@ -1,0 +1,17 @@
+include<stdio.h>
+int main()
+{
+	char s[100],ch;
+	int count=0,i;
+	printf("enter a string:");
+	fgets(s,sizeof(s),stdin);
+	printf("frequency of a letter");
+	scanf("%d",ch);
+	for(i=0;s[i]!='\0';i++)
+	{
+		if(ch==s[i])
+		count++;
+	}
+	printf("frequency of %c:%d",ch,count);
+	return 0;
+}
